@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  webhookservice:
+    image: ${DOCKER_REGISTRY}webhookservice
+    build:
+      context: .
+      dockerfile: WebHookService/Dockerfile
